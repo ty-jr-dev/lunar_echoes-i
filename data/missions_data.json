@@ -1,83 +1,75 @@
-{
-  "project": "Lunar Echoes",
-  "challenge": "Abandoned but not Forgotten",
-  "last_updated": "2026-11-07",
-  "missions": [
-    {
-      "id": "apollo-11",
-      "name": "Apollo 11",
-      "body": "Moon",
-      "launch_year": 1969,
-      "end_year": 1969,
-      "status": "Abandoned on the lunar surface",
-      "location_description": "Sea of Tranquility (Mare Tranquillitatis), Moon",
-      "summary": "First human landing on the Moon. The descent stage remains on the surface.",
-      "technologies": [
-        "Lunar Module Descent Stage",
-        "Landing radar",
-        "Laser ranging retroreflector"
-      ],
-      "key_discoveries": [
-        "First successful human landing on another world",
-        "Confirmed the lunar surface could support a spacecraft",
-        "Laser reflector still used today to measure Earth-Moon distance"
-      ],
-      "left_behind": [
-        "Lunar Module Descent Stage",
-        "Laser ranging retroreflector",
-        "Scientific instruments (EASEP)"
-      ],
-      "why_it_matters": "The descent stage and retroreflector remain on the Moon. The reflector is still used by scientists to measure the distance between Earth and the Moon with high precision.",
-      "story": "On 20 July 1969 the Lunar Module Eagle landed in the Sea of Tranquility. After the moonwalk, the ascent stage lifted off, leaving the descent stage and scientific instruments on the surface. Those pieces of hardware are still there.",
-      "images": [
-        {
-          "src": "https://images-assets.nasa.gov/image/as11-40-5903/as11-40-5903~orig.jpg",
-          "alt": "Apollo 11 Lunar Module on the Moon",
-          "credit": "NASA"
-        }
-      ],
-      "sources": [
-        "https://www.nasa.gov/mission/apollo-11/",
-        "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
-      ]
-    },
-    {
-      "id": "viking-1",
-      "name": "Viking 1 Lander",
-      "body": "Mars",
-      "launch_year": 1975,
-      "end_year": 1982,
-      "status": "Silent / Abandoned on the surface of Mars",
-      "location_description": "Chryse Planitia, Mars",
-      "summary": "First successful soft landing on Mars. Operated for more than six years.",
-      "technologies": [
-        "Gas chromatograph-mass spectrometer",
-        "Biology experiments package",
-        "Cameras and meteorology instruments"
-      ],
-      "key_discoveries": [
-        "First successful soft landing on Mars",
-        "First detailed surface images of Mars",
-        "Long-duration surface operations (over 6 years)"
-      ],
-      "left_behind": [
-        "Viking 1 Lander",
-        "Scientific instruments",
-        "RTG power system"
-      ],
-      "why_it_matters": "Viking 1 proved soft landings on Mars were possible and delivered the first long-term scientific data from the Martian surface. Later missions built on its lessons.",
-      "story": "Viking 1 landed on Mars in July 1976. Designed for 90 days, it operated for more than six years. It sent the first high-resolution images of the Martian surface and ran biology experiments. Contact was lost in 1982. The lander remains on the surface.",
-      "images": [
-        {
-          "src": "https://mars.nasa.gov/system/resources/detail_files/7709_PIA00563-full.jpg",
-          "alt": "First clear image from the surface of Mars by Viking 1",
-          "credit": "NASA / JPL"
-        }
-      ],
-      "sources": [
-        "https://science.nasa.gov/mission/viking-1/",
-        "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-075C"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "apollo-11",
+    "name": "Apollo 11",
+    "body": "Moon",
+    "launch_year": 1969,
+    "end_year": 1969,
+    "status": "Abandoned",
+    "location_description": "Sea of Tranquility (Mare Tranquillitatis), Moon",
+    "summary": "First crewed landing on the Moon. Descent stage and instruments remain on the surface.",
+    "technologies": [
+      "Landing radar",
+      "Laser ranging retroreflector"
+    ],
+    "key_discoveries": [
+      "Confirmed the lunar surface could support a spacecraft",
+      "Laser reflector still used today to measure Earth-Moon distance"
+    ],
+    "left_behind": [
+      "Lunar Module Descent Stage",
+      "Laser ranging retroreflector",
+      "Scientific instruments (EASEP)"
+    ],
+    "why_it_matters": "The descent stage and retroreflector remain on the Moon. The reflector is still used by scientists to measure the distance between Earth and the Moon with high precision.",
+    "story": "On 20 July 1969 the Lunar Module Eagle landed in the Sea of Tranquility. After the moonwalk, the ascent stage lifted off, leaving the descent stage and scientific instruments on the surface. Those pieces of hardware are still there.",
+    "images": [
+      {
+        "src": "assets/images/as11-40-5903.jpg",
+        "alt": "Astronaut Buzz Aldrin on the lunar surface with Neil Armstrong reflected in his visor",
+        "credit": "NASA"
+      }
+    ],
+    "sources": [
+      "https://www.nasa.gov/mission/apollo-11/",
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+    ]
+  },
+  {
+    "id": "viking-1",
+    "name": "Viking 1 Lander",
+    "body": "Mars",
+    "launch_year": 1975,
+    "end_year": 1982,
+    "status": "Abandoned",
+    "location_description": "Chryse Planitia, Mars",
+    "summary": "First U.S. lander to operate successfully on Mars. Worked for more than six years.",
+    "technologies": [
+      "Gas chromatograph-mass spectrometer",
+      "Biology experiments package",
+      "Cameras and meteorology instruments"
+    ],
+    "key_discoveries": [
+      "First detailed surface images of Mars",
+      "Long-duration surface operations (over 6 years)"
+    ],
+    "left_behind": [
+      "Viking 1 Lander",
+      "Scientific instruments",
+      "RTG power system"
+    ],
+    "why_it_matters": "Viking 1 proved soft landings on Mars were possible and delivered the first long-term scientific data from the Martian surface. Later missions built on its lessons.",
+    "story": "Viking 1 landed on Mars in July 1976. Designed for 90 days, it operated for more than six years. It sent the first high-resolution images of the Martian surface and ran biology experiments. Contact was lost in 1982. The lander remains on the surface.",
+    "images": [
+      {
+        "src": "assets/images/viking1-pia00563.jpg",
+        "alt": "First clear image from the surface of Mars by Viking 1",
+        "credit": "NASA / JPL"
+      }
+    ],
+    "sources": [
+      "https://science.nasa.gov/mission/viking-1/",
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-075C"
+    ]
+  }
+]
