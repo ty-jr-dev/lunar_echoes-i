@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lunar Echoes — Forgotten Technology. Lasting Impact.</title>
   <meta name="description" content="Explore the NASA equipment left on the Moon, Mars and beyond — and the discoveries that still shape our future." />
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
+  
+  <!-- Tailwind CSS (versão fixa) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/lunar-echoes-mark.svg" type="image/svg+xml" />
+  
   <!-- Custom styles -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -18,11 +21,9 @@
   <header class="absolute top-0 left-0 right-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-2">
-        <span class="text-xl font-bold tracking-tight">
-          LUNAR <span class="text-cyan-400">ECHOES</span>
-        </span>
+        <img src="assets/images/lunar-echoes-logo-dark.svg" alt="Lunar Echoes" class="h-10" />
       </a>
-      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+      <nav class="flex items-center gap-4 sm:gap-8 text-sm text-slate-300">
         <a href="index.html" class="text-white">Home</a>
         <a href="#missions" class="hover:text-cyan-400 transition">Missions</a>
         <a href="#timeline" class="hover:text-cyan-400 transition">Timeline</a>
@@ -36,16 +37,19 @@
     <!-- Background image -->
     <div class="absolute inset-0 z-0">
       <img 
-        src="https://images-assets.nasa.gov/image/PIA00452/PIA00452~orig.jpg" 
-        alt="Earth rising over the Moon" 
+        src="assets/images/hero-moon-earth.jpg" 
+        alt="Illustration of Earth rising above the lunar horizon" 
         class="w-full h-full object-cover"
       />
-      <!-- Dark overlay for readability -->
-      <div class="absolute inset-0 bg-slate-950/70"></div>
+      <!-- Gradient only on the left for text readability -->
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent"></div>
     </div>
 
     <!-- Hero content -->
     <div class="relative z-10 max-w-6xl mx-auto px-4 pt-24 pb-20">
+      <p class="text-cyan-400 text-sm font-medium tracking-wide mb-4">
+        Abandoned but not Forgotten · NASA Space Apps Challenge 2026
+      </p>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight max-w-2xl">
         Forgotten Technology.<br />
         <span class="text-cyan-400">Lasting Impact.</span>
@@ -62,41 +66,39 @@
     </div>
   </section>
 
-    <!-- ========== FILTERS ========== -->
-  <section class="max-w-6xl mx-auto px-4 pt-16 pb-4">
-    <div class="flex flex-wrap gap-3">
-      <button data-filter="all" class="filter-btn bg-cyan-500/10 border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm">
+  <!-- ========== MISSIONS ========== -->
+  <section id="missions" class="max-w-6xl mx-auto px-4 py-24">
+    <h2 class="text-3xl font-bold mb-4">Selected Hardware</h2>
+    <p class="text-slate-400 mb-8">Missions that left equipment on other worlds.</p>
+
+    <!-- Filters (moved inside the section) -->
+    <div class="flex flex-wrap gap-3 mb-12">
+      <button data-filter="all" class="filter-btn active border border-cyan-500 bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm" aria-pressed="true">
         All
       </button>
-      <button data-filter="Moon" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition">
+      <button data-filter="Moon" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
         Moon
       </button>
-      <button data-filter="Mars" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition">
+      <button data-filter="Mars" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
         Mars
       </button>
-      <button data-filter="Deep Space" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition">
+      <button data-filter="Deep Space" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
         Deep Space
       </button>
     </div>
-  </section>
-
-  <!-- ========== MISSIONS (placeholder) ========== -->
-  <section id="missions" class="max-w-6xl mx-auto px-4 py-24">
-    <h2 class="text-3xl font-bold mb-4">Selected Hardware</h2>
-    <p class="text-slate-400 mb-12">Missions that left equipment on other worlds.</p>
 
     <div id="missions-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <p class="text-slate-500 col-span-full">Missions will appear here...</p>
+      <p class="text-slate-400 col-span-full">Loading missions…</p>
     </div>
   </section>
 
-  <!-- ========== TIMELINE (placeholder) ========== -->
+  <!-- ========== TIMELINE ========== -->
   <section id="timeline" class="border-t border-slate-800 bg-slate-900/50">
     <div class="max-w-6xl mx-auto px-4 py-24">
       <h2 class="text-3xl font-bold mb-4">Mission Timeline</h2>
       <p class="text-slate-400 mb-12">A chronological view of the selected hardware.</p>
       <div id="timeline-container">
-        <p class="text-slate-500">Timeline will appear here...</p>
+        <p class="text-slate-400">Loading timeline…</p>
       </div>
     </div>
   </section>
@@ -114,14 +116,14 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="border-t border-slate-800 py-10 text-center text-sm text-slate-500">
+  <footer class="border-t border-slate-800 py-10 text-center text-sm text-slate-400">
     <p>Lunar Echoes — NASA Space Apps Challenge 2026 · Maputo</p>
     <p class="mt-1">Built with official NASA open data</p>
+    <p class="mt-2 text-xs">Hero image: AI-generated illustration. Mission images: NASA.</p>
   </footer>
 
   <!-- Scripts -->
   <script src="js/data-loader.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 </html>
