@@ -11,7 +11,7 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
-/* Mission cards (will be used later) */
+/* Mission cards */
 .mission-card {
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -19,4 +19,26 @@ button:focus-visible {
 .mission-card:hover {
   transform: translateY(-4px);
   border-color: #22d3ee;
+}
+
+/* Filter buttons - active state */
+.filter-btn.active {
+  background-color: rgba(6, 182, 212, 0.1); /* cyan-500/10 */
+  border-color: #06b6d4; /* cyan-500 */
+  color: #22d3ee; /* cyan-400 */
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .mission-card {
+    transition: none;
+  }
+
+  .mission-card:hover {
+    transform: none;
+  }
 }
