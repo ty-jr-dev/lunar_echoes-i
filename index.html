@@ -5,29 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lunar Echoes — Forgotten Technology. Lasting Impact.</title>
   <meta name="description" content="Explore the NASA equipment left on the Moon, Mars and beyond — and the discoveries that still shape our future." />
-  
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <!-- Tailwind CSS (versão fixa) -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
   <!-- Favicon -->
   <link rel="icon" href="assets/images/lunar-echoes-mark.svg" type="image/svg+xml" />
-  
+
   <!-- Custom styles -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="bg-slate-950 text-white">
+<body class="bg-slate-950 text-white font-sans">
 
   <!-- ========== HEADER ========== -->
-  <header class="absolute top-0 left-0 right-0 z-50">
+  <header class="absolute top-0 left-0 right-0 z-50 bg-slate-950/60 border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-2">
-        <img src="assets/images/lunar-echoes-logo-dark.svg" alt="Lunar Echoes" class="h-10" />
+        <img src="assets/images/lunar-echoes-logo-dark.svg" alt="Lunar Echoes" class="h-14" />
       </a>
       <nav class="flex items-center gap-4 sm:gap-8 text-sm text-slate-300">
-        <a href="index.html" class="text-white">Home</a>
-        <a href="#missions" class="hover:text-cyan-400 transition">Missions</a>
-        <a href="#timeline" class="hover:text-cyan-400 transition">Timeline</a>
-        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="index.html" class="text-sky-400 border-b-2 border-sky-400 pb-1">Home</a>
+        <a href="#missions" class="hover:text-sky-400 transition">Missions</a>
+        <a href="#timeline" class="hover:text-sky-400 transition">Timeline</a>
+        <a href="#about" class="hover:text-sky-400 transition">About</a>
       </nav>
     </div>
   </header>
@@ -36,9 +52,9 @@
   <section class="relative min-h-screen flex items-center">
     <!-- Background image -->
     <div class="absolute inset-0 z-0">
-      <img 
-        src="assets/images/hero-moon-earth.jpg" 
-        alt="Illustration of Earth rising above the lunar horizon" 
+      <img
+        src="assets/images/hero-moon-earth.jpg"
+        alt="Illustration of Earth rising above the lunar horizon"
         class="w-full h-full object-cover"
       />
       <!-- Gradient only on the left for text readability -->
@@ -46,20 +62,22 @@
     </div>
 
     <!-- Hero content -->
-    <div class="relative z-10 max-w-6xl mx-auto px-4 pt-24 pb-20">
-      <p class="text-cyan-400 text-sm font-medium tracking-wide mb-4">
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-4 pt-24 pb-20">
+      <p class="text-sky-400 text-sm font-medium tracking-wide mb-4">
+        <span class="inline-block h-px w-10 bg-sky-400 align-middle mr-3"></span>
         Abandoned but not Forgotten · NASA Space Apps Challenge 2026
       </p>
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight max-w-2xl">
-        Forgotten Technology.<br />
-        <span class="text-cyan-400">Lasting Impact.</span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight max-w-lg">
+        Forgotten<br />
+        Technology.<br />
+        <span class="text-sky-400">Lasting Impact.</span>
       </h1>
-      <p class="mt-6 text-lg text-slate-300 max-w-xl">
-        Explore the NASA equipment left on the Moon, Mars and beyond — 
+      <p class="mt-6 text-lg text-slate-300 max-w-md">
+        Explore the NASA equipment left on the Moon, Mars and beyond —
         and the discoveries that still shape our future.
       </p>
-      <a href="#missions" 
-         class="inline-flex items-center gap-2 mt-10 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-8 py-3.5 rounded-full transition">
+      <a href="#missions"
+         class="inline-flex items-center gap-2 mt-10 bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-8 py-3.5 rounded-full transition">
         Explore Missions
         <span>→</span>
       </a>
@@ -71,18 +89,18 @@
     <h2 class="text-3xl font-bold mb-4">Selected Hardware</h2>
     <p class="text-slate-400 mb-8">Missions that left equipment on other worlds.</p>
 
-    <!-- Filters (moved inside the section) -->
+    <!-- Filters -->
     <div class="flex flex-wrap gap-3 mb-12">
-      <button data-filter="all" class="filter-btn active border border-cyan-500 bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm" aria-pressed="true">
+      <button data-filter="all" class="filter-btn active border border-slate-700 text-slate-300 hover:border-sky-500 hover:text-sky-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="true">
         All
       </button>
-      <button data-filter="Moon" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
+      <button data-filter="Moon" class="filter-btn border border-slate-700 text-slate-300 hover:border-sky-500 hover:text-sky-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
         Moon
       </button>
-      <button data-filter="Mars" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
+      <button data-filter="Mars" class="filter-btn border border-slate-700 text-slate-300 hover:border-sky-500 hover:text-sky-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
         Mars
       </button>
-      <button data-filter="Deep Space" class="filter-btn border border-slate-700 text-slate-300 hover:border-cyan-500 hover:text-cyan-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
+      <button data-filter="Deep Space" class="filter-btn border border-slate-700 text-slate-300 hover:border-sky-500 hover:text-sky-400 px-4 py-2 rounded-full text-sm transition" aria-pressed="false">
         Deep Space
       </button>
     </div>
@@ -108,8 +126,8 @@
     <div class="max-w-6xl mx-auto px-4 py-24">
       <h2 class="text-3xl font-bold mb-6">About Lunar Echoes</h2>
       <p class="text-slate-400 max-w-3xl leading-relaxed">
-        Lunar Echoes is an educational digital museum created for the NASA Space Apps Challenge 2026. 
-        It tells the stories of hardware left on the Moon, Mars and in deep space — 
+        Lunar Echoes is an educational digital museum created for the NASA Space Apps Challenge 2026.
+        It tells the stories of hardware left on the Moon, Mars and in deep space —
         the technology, the discoveries, and why it still matters today.
       </p>
     </div>
