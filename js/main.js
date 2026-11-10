@@ -60,21 +60,23 @@ function renderMissions(missions) {
 
 function createMissionCard(mission) {
   const article = document.createElement('article');
-  article.className = 'mission-card bg-slate-900 border border-slate-800 rounded-xl hover:border-cyan-400';
+  article.className = 'mission-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-sky-400';
 
   const imageHtml = mission.images && mission.images[0]
-    ? `<img src="${mission.images[0].src}" alt="${mission.images[0].alt}" loading="lazy" class="w-full h-40 object-cover rounded-t-xl mb-0">`
+    ? `<img src="${mission.images[0].src}" alt="${mission.images[0].alt}" loading="lazy" class="w-full h-40 object-cover">`
     : '';
 
   article.innerHTML = `
-    <a href="mission.html?id=${mission.id}" class="block p-5">
+    <a href="mission.html?id=${mission.id}" class="block">
       ${imageHtml}
-      <p class="text-cyan-400 text-xs font-medium tracking-wide uppercase mb-2">
-        ${mission.body} · ${mission.launch_year}
-      </p>
-      <h3 class="text-lg font-semibold mb-2 leading-snug">${mission.name}</h3>
-      <p class="text-slate-400 text-sm">${mission.summary}</p>
-      <p class="mt-4 text-xs text-slate-400">Status: ${mission.status}</p>
+      <div class="p-5">
+        <p class="text-sky-400 text-xs font-medium tracking-wide uppercase mb-2">
+          ${mission.body} · ${mission.launch_year}
+        </p>
+        <h3 class="text-lg font-semibold mb-2 leading-snug">${mission.name}</h3>
+        <p class="text-slate-400 text-sm">${mission.summary}</p>
+        <p class="mt-4 text-xs text-slate-400">Status: ${mission.status}</p>
+      </div>
     </a>
   `;
 
@@ -124,19 +126,24 @@ function renderTimeline(missions) {
   let html = '<div class="space-y-8">';
 
   sorted.forEach((mission, index) => {
-    const yearRange = mission.end_year
-      ? `${mission.launch_year} – ${mission.end_year}`
-      : `${mission.launch_year} – present`;
+    let yearRange;
+    if (mission.end_year === null) {
+      yearRange = `${mission.launch_year} – present`;
+    } else if (mission.launch_year === mission.end_year) {
+      yearRange = `${mission.launch_year}`;
+    } else {
+      yearRange = `${mission.launch_year} – ${mission.end_year}`;
+    }
 
     html += `
       <a href="mission.html?id=${mission.id}" class="flex gap-4 group">
         <div class="flex flex-col items-center">
-          <div class="w-3 h-3 rounded-full bg-cyan-400 group-hover:bg-cyan-300 transition"></div>
+          <div class="w-3 h-3 rounded-full bg-sky-400 group-hover:bg-sky-300 transition"></div>
           ${index < sorted.length - 1 ? '<div class="w-px flex-1 bg-slate-700 mt-2"></div>' : ''}
         </div>
         <div class="pb-8">
-          <p class="text-cyan-400 text-sm font-medium">${yearRange}</p>
-          <h3 class="font-semibold mt-1 group-hover:text-cyan-400 transition">${mission.name}</h3>
+          <p class="text-sky-400 text-sm font-medium">${yearRange}</p>
+          <h3 class="font-semibold mt-1 group-hover:text-sky-400 transition">${mission.name}</h3>
           <p class="text-slate-400 text-sm mt-1">${mission.body} · ${mission.status}</p>
         </div>
       </a>
