@@ -9,8 +9,7 @@
     "location_description": "Sea of Tranquility (Mare Tranquillitatis), Moon",
     "summary": "First crewed landing on the Moon. Descent stage and instruments remain on the surface.",
     "technologies": [
-      "Landing radar",
-      "Laser ranging retroreflector"
+      "Landing radar"
     ],
     "key_discoveries": [
       "Confirmed the lunar surface could support a spacecraft",
@@ -63,7 +62,7 @@
     "images": [
       {
         "src": "assets/images/viking1-pia00563.jpg",
-        "alt": "First clear image from the surface of Mars by Viking 1",
+        "alt": "First color image taken by the Viking 1 lander, the day after landing",
         "credit": "NASA / JPL"
       }
     ],
