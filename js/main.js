@@ -127,7 +127,7 @@ function renderTimeline(missions) {
 
   sorted.forEach((mission, index) => {
     let yearRange;
-    if (mission.end_year === null) {
+    if (mission.end_year == null) {
       yearRange = `${mission.launch_year} – present`;
     } else if (mission.launch_year === mission.end_year) {
       yearRange = `${mission.launch_year}`;
