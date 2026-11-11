@@ -1,7 +1,7 @@
 # Lunar Echoes
 
-Educational digital museum for the NASA Space Apps Challenge 2026  
-Challenge: **Abandoned but not Forgotten**
+Educational digital museum created for the NASA Space Apps Challenge 2026.
+Challenge: Abandoned but not Forgotten.
 
 Explore NASA hardware left on the Moon, Mars and in deep space — the technology, the discoveries, and why it still matters.
 
@@ -15,31 +15,40 @@ Explore NASA hardware left on the Moon, Mars and in deep space — the technolog
 
 ## Run locally
 
-No terminal, dentro da pasta do projecto:
-
 python3 -m http.server 8080
 
-Depois abre no browser: http://localhost:8080
+Open http://localhost:8080 in your browser.
 
 ## Project structure
 
-luna-echoes-prep/  
-├── index.html          (Home + lista de missões + timeline)  
-├── mission.html        (Página de detalhe da missão)  
-├── css/style.css       (Estilos customizados)  
-├── js/  
-│   ├── data-loader.js  (Carrega e valida o JSON)  
-│   └── main.js         (Lógica da interface)  
-├── data/  
-│   └── missions_data.json  
-└── assets/images/      (Hero, logos, fotos das missões)
+lunar-echoes/
+├── index.html              (Home, mission list and timeline)
+├── mission.html            (Mission detail page)
+├── css/style.css           (Custom styles)
+├── js/
+│   ├── data-loader.js      (Loads and validates the JSON)
+│   ├── main.js             (Home page logic)
+│   └── mission.js          (Mission detail page logic)
+├── data/
+│   └── missions_data.json
+└── assets/images/          (Hero, logos and mission photos)
+
+## Data format
+
+Root is a JSON array of mission objects. Required fields: id, name, body, launch_year, end_year, status, summary, story, location_description, why_it_matters, technologies, key_discoveries, left_behind, images, sources.
+
+## Credits
+
+- Mission images: NASA / JPL
+- Hero image: AI-generated illustration
+- Logo and mark: project assets
 
 ## Publish on GitHub Pages
 
-1. Faz push do repositório para o GitHub.  
-2. Vai a Settings → Pages → Source: Deploy from a branch → escolhe main / root.  
-3. O site fica disponível em https://<username>.github.io/<repo>/
+1. Push the repository to GitHub.
+2. Go to Settings → Pages → Source: Deploy from a branch → select main / root.
+3. The site will be available at https://<username>.github.io/<repo>/
 
 ## License
 
-MIT
+MIT (see LICENSE file)
