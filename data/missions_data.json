@@ -7,21 +7,25 @@
     "end_year": 1969,
     "status": "Abandoned",
     "location_description": "Sea of Tranquility (Mare Tranquillitatis), Moon",
-    "summary": "First crewed landing on the Moon. Descent stage and instruments remain on the surface.",
+    "summary": "First crewed Moon landing. The descent stage and a small science station were left on the surface.",
     "technologies": [
+      "Saturn V rocket",
+      "Lunar Module Eagle (descent and ascent stages)",
       "Landing radar"
     ],
     "key_discoveries": [
-      "Confirmed the lunar surface could support a spacecraft",
-      "Laser reflector still used today to measure Earth-Moon distance"
+      "About 21.5 kg of lunar rock and soil returned for study on Earth",
+      "The laser retroreflector made precise Earth-Moon distance measurements possible",
+      "The seismometer recorded lunar vibrations for about three weeks"
     ],
     "left_behind": [
-      "Lunar Module Descent Stage",
-      "Laser ranging retroreflector",
-      "Scientific instruments (EASEP)"
+      "Lunar Module descent stage",
+      "Passive seismometer and laser retroreflector (EASEP)",
+      "TV camera, tools and equipment",
+      "Commemorative plaque and mementos"
     ],
-    "why_it_matters": "The descent stage and retroreflector remain on the Moon. The reflector is still used by scientists to measure the distance between Earth and the Moon with high precision.",
-    "story": "On 20 July 1969 the Lunar Module Eagle landed in the Sea of Tranquility. After the moonwalk, the ascent stage lifted off, leaving the descent stage and scientific instruments on the surface. Those pieces of hardware are still there.",
+    "why_it_matters": "The hardware on the Moon is a physical record of the first landing. The retroreflector is still used today to measure the distance between Earth and the Moon with great precision.",
+    "story": "On 20 July 1969, Neil Armstrong and Buzz Aldrin landed the Lunar Module Eagle in the Sea of Tranquility while Michael Collins orbited above in Columbia. After about 21 hours on the surface, the ascent stage lifted off and the descent stage stayed behind, carrying a plaque that says the crew came in peace for all mankind. Beside it, the astronauts had set up a seismometer and a laser reflector, and they left a TV camera and tools. More than fifty years later, scientists still fire lasers at that reflector from Earth.",
     "images": [
       {
         "src": "assets/images/as11-40-5903.jpg",
@@ -31,7 +35,86 @@
     ],
     "sources": [
       "https://www.nasa.gov/mission/apollo-11/",
-      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
+      "https://nssdc.gsfc.nasa.gov/imgcat/html/object_page/a11_h_40_5903.html"
+    ]
+  },
+  {
+    "id": "apollo-12",
+    "name": "Apollo 12",
+    "body": "Moon",
+    "launch_year": 1969,
+    "end_year": 1977,
+    "status": "Abandoned",
+    "location_description": "Ocean of Storms (Oceanus Procellarum), Moon",
+    "summary": "Second crewed landing, beside the Surveyor 3 probe. The crew brought home pieces of the robot.",
+    "technologies": [
+      "Lunar Module Intrepid",
+      "Pinpoint landing guidance",
+      "ALSEP nuclear-powered science station"
+    ],
+    "key_discoveries": [
+      "About 34 kg of lunar samples returned",
+      "Surveyor 3 parts, after 31 months on the Moon, showed engineers how materials age there",
+      "ALSEP instruments studied moonquakes and the solar wind for years"
+    ],
+    "left_behind": [
+      "Lunar Module descent stage",
+      "ALSEP science station (switched off in 1977)",
+      "Surveyor 3, minus the parts taken home",
+      "Tools and equipment"
+    ],
+    "why_it_matters": "Surveyor 3 and the Apollo 12 hardware show how equipment ages after years on the Moon, and how a robotic probe and human explorers met on the same surface.",
+    "story": "On 19 November 1969, Pete Conrad and Alan Bean landed the Lunar Module Intrepid in the Ocean of Storms, about 180 metres from Surveyor 3, a robotic probe that had sat on the Moon since April 1967. On a second moonwalk they walked to it, cut off its camera and other parts and carried them home, so engineers could see what 31 months on the Moon had done to the hardware. They left Intrepid's descent stage and a nuclear-powered science station behind.",
+    "images": [
+      {
+        "src": "assets/images/as12-48-7133.jpg",
+        "alt": "Astronaut Charles Conrad examines the Surveyor 3 spacecraft, with the Lunar Module in the background",
+        "credit": "NASA"
+      }
+    ],
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/imgcat/html/object_page/a12_h_48_7133.html",
+      "https://www.nasa.gov/image-article/two-spacecraft-moon"
+    ]
+  },
+  {
+    "id": "apollo-17",
+    "name": "Apollo 17",
+    "body": "Moon",
+    "launch_year": 1972,
+    "end_year": 1977,
+    "status": "Abandoned",
+    "location_description": "Taurus-Littrow Valley, Moon",
+    "summary": "Last crewed Moon landing. The lunar rover and a science station remain where the astronauts left them.",
+    "technologies": [
+      "Battery-powered rover that extended the exploration range",
+      "Heat-flow, seismic and gravity instruments",
+      "Geology tools for sampling rock and soil"
+    ],
+    "key_discoveries": [
+      "About 110 kg of rock and soil returned, including ancient highland rock and volcanic material",
+      "Orange volcanic glass in the soil revealed ancient volcanic activity",
+      "Instruments measured heat flowing out of the Moon and tiny seismic signals"
+    ],
+    "left_behind": [
+      "Lunar Module Challenger descent stage",
+      "Lunar Roving Vehicle",
+      "ALSEP science station (switched off in 1977)",
+      "Geology tools and equipment"
+    ],
+    "why_it_matters": "The rover and the instruments in Taurus-Littrow are a frozen record of the last Apollo landing, and the samples and data from this mission are still studied today.",
+    "story": "On 11 December 1972, Eugene Cernan and Harrison Schmitt landed the Lunar Module Challenger in the Taurus-Littrow valley. Schmitt, a geologist, was the first professional scientist to walk on the Moon. Using the battery-powered Lunar Roving Vehicle, they drove more than 35 kilometres over three days and collected rock and soil, including orange volcanic glass. When they lifted off on 14 December, the rover, the descent stage and a science station stayed behind. Cernan was the last person to walk on the Moon.",
+    "images": [
+      {
+        "src": "assets/images/as17-147-22527.jpg",
+        "alt": "Apollo 17 lunar rover on the surface of the Moon",
+        "credit": "NASA"
+      }
+    ],
+    "sources": [
+      "https://science.nasa.gov/wp-content/uploads/2024/01/lro-apollo-17-litho.pdf",
+      "https://moon.nasa.gov/system/downloadable_items/357_LRO-litho6-viewing-traces.pdf"
     ]
   },
   {
@@ -44,21 +127,23 @@
     "location_description": "Chryse Planitia, Mars",
     "summary": "First U.S. lander to operate successfully on Mars. Worked for more than six years.",
     "technologies": [
-      "Gas chromatograph-mass spectrometer",
-      "Biology experiments package",
-      "Cameras and meteorology instruments"
+      "Robotic arm for collecting soil samples",
+      "Gas chromatograph-mass spectrometer (GCMS)",
+      "Biology experiments, including Labeled Release",
+      "Panoramic cameras and weather instruments"
     ],
     "key_discoveries": [
-      "First detailed surface images of Mars",
-      "Long-duration surface operations (over 6 years)"
+      "First detailed close-up pictures of the Martian surface, including the first color image",
+      "Measured temperature, pressure and wind on Mars from the surface for years",
+      "Soil tests found no confirmed signs of life, though one experiment's puzzling result is still debated"
     ],
     "left_behind": [
-      "Viking 1 Lander",
+      "Viking 1 lander, including its robotic arm and cameras",
       "Scientific instruments",
-      "RTG power system"
+      "Two radioisotope power generators (RTGs)"
     ],
-    "why_it_matters": "Viking 1 proved soft landings on Mars were possible and delivered the first long-term scientific data from the Martian surface. Later missions built on its lessons.",
-    "story": "Viking 1 landed on Mars in July 1976. Designed for 90 days, it operated for more than six years. It sent the first high-resolution images of the Martian surface and ran biology experiments. Contact was lost in 1982. The lander remains on the surface.",
+    "why_it_matters": "Viking 1 proved that landing and working on Mars was possible and delivered the first long-term scientific data from the Martian surface. Later missions built on its lessons.",
+    "story": "Viking 1 landed on Mars on 20 July 1976, in Chryse Planitia. Designed to work for 90 days, it operated for more than six years. Its cameras sent the first close-up pictures of the Martian surface, letting people see a real Martian landscape for the first time, its robotic arm scooped up soil, and its experiments searched for signs of life without finding clear evidence. Contact was lost in 1982. The lander and its two nuclear power generators remain where it stopped.",
     "images": [
       {
         "src": "assets/images/viking1-pia00563.jpg",
@@ -68,7 +153,155 @@
     ],
     "sources": [
       "https://science.nasa.gov/mission/viking-1/",
-      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-075C"
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-075C",
+      "https://www.jpl.nasa.gov/images/pia00563-first-color-image-from-viking-lander-1/"
+    ]
+  },
+  {
+    "id": "galileo",
+    "name": "Galileo",
+    "body": "Deep Space",
+    "launch_year": 1989,
+    "end_year": 2003,
+    "status": "Retired",
+    "location_description": "Jupiter system; the orbiter was destroyed in Jupiter's atmosphere",
+    "summary": "First spacecraft to orbit Jupiter. In 2003 it was sent into the planet on purpose to protect its moons.",
+    "technologies": [
+      "Atmospheric probe that descended by parachute",
+      "Solid-State Imaging camera",
+      "Near-Infrared Mapping Spectrometer",
+      "Magnetometer and plasma instruments"
+    ],
+    "key_discoveries": [
+      "Strong evidence of a subsurface ocean under Europa's ice",
+      "A magnetic field of its own at Ganymede",
+      "Intense volcanic activity on Io",
+      "The first moon found orbiting an asteroid (Dactyl)"
+    ],
+    "left_behind": [
+      "Nothing remains: the orbiter was destroyed in Jupiter's atmosphere and its probe ended inside the planet"
+    ],
+    "why_it_matters": "Galileo showed that icy moons may hide oceans, and its planned end set an example for protecting possible habitats in the outer Solar System.",
+    "story": "Launched from the Space Shuttle Atlantis on 18 October 1989, Galileo reached Jupiter in December 1995 and stayed for almost eight years, the first spacecraft to orbit the giant planet. On the way it had flown past Venus, the Earth and two asteroids. It dropped a probe into Jupiter's atmosphere, which transmitted for about 58 minutes. Galileo's data revealed a likely ocean beneath the ice of Europa. On 21 September 2003, controllers steered it into Jupiter on purpose, so that it could never contaminate Europa.",
+    "images": [
+      {
+        "src": "assets/images/pia00600.jpg",
+        "alt": "Family portrait of Jupiter and the Galilean satellites",
+        "credit": "NASA / JPL"
+      }
+    ],
+    "sources": [
+      "https://science.nasa.gov/mission/galileo/"
+    ]
+  },
+  {
+    "id": "mars-pathfinder",
+    "name": "Mars Pathfinder and Sojourner",
+    "body": "Mars",
+    "launch_year": 1996,
+    "end_year": 1997,
+    "status": "Abandoned",
+    "location_description": "Ares Vallis, Mars",
+    "summary": "A lander with airbags and the first rover on Mars. Both stayed where they stopped working.",
+    "technologies": [
+      "Airbag landing system",
+      "Sojourner six-wheeled rover",
+      "APXS spectrometer for analysing rock chemistry",
+      "IMP stereo camera"
+    ],
+    "key_discoveries": [
+      "Showed that airbag landings and mobile rovers work on Mars",
+      "Chemical analysis of rocks such as Barnacle Bill and Yogi revealed a variety of rock types, including andesite-like compositions",
+      "Weather measurements from the landing site"
+    ],
+    "left_behind": [
+      "Pathfinder lander (later named the Carl Sagan Memorial Station)",
+      "Sojourner rover",
+      "The landing airbags",
+      "Cameras, antennas and instruments"
+    ],
+    "why_it_matters": "Pathfinder proved that a low-cost lander and a small rover could explore Mars, opening the way for the larger rovers that followed.",
+    "story": "On 4 July 1997, Mars Pathfinder bounced to a stop in Ares Vallis, cushioned by airbags. Its petals opened and Sojourner, a rover about the size of a microwave oven, rolled out: the first wheeled rover to operate on Mars. Planned to last a week, it worked for 83 days, analysing rocks with a spectrometer while the lander photographed the landscape. The last data arrived on 27 September 1997. The lander, renamed the Carl Sagan Memorial Station, and the rover remain there.",
+    "images": [
+      {
+        "src": "assets/images/pia01003.jpg",
+        "alt": "Sojourner rover near the rock Yogi, with a Pathfinder lander petal in view",
+        "credit": "NASA / JPL"
+      }
+    ],
+    "sources": [
+      "https://photojournal.jpl.nasa.gov/catalog/PIA01003",
+      "https://photojournal.jpl.nasa.gov/catalog/PIA00778"
+    ]
+  },
+  {
+    "id": "cassini-huygens",
+    "name": "Cassini-Huygens",
+    "body": "Deep Space",
+    "launch_year": 1997,
+    "end_year": 2017,
+    "status": "Abandoned",
+    "location_description": "Saturn system; the Huygens probe lies on the surface of Titan",
+    "summary": "Studied Saturn for 13 years. Its Huygens probe still rests on the surface of Titan.",
+    "technologies": [
+      "Orbiter with 12 instruments, powered by three radioisotope generators",
+      "Huygens probe that descended to Titan by parachute",
+      "Radar that mapped Titan through its thick haze",
+      "Infrared and ultraviolet spectrometers"
+    ],
+    "key_discoveries": [
+      "Plumes of ice and vapour at Enceladus, with evidence of a global subsurface ocean",
+      "Rivers, lakes and seas of liquid methane and ethane on Titan",
+      "Detailed structure and dynamics of Saturn's rings",
+      "Saturn's polar hexagon and giant storms"
+    ],
+    "left_behind": [
+      "Huygens probe, resting on Titan: the first human-made object to land on a moon of the outer Solar System"
+    ],
+    "why_it_matters": "Cassini's discoveries made Enceladus and Titan prime targets in the search for habitable worlds, and Huygens remains a human footprint in the outer Solar System.",
+    "story": "Cassini-Huygens, a joint mission of NASA, ESA and the Italian space agency, reached Saturn on 1 July 2004. On 14 January 2005, the European Huygens probe parachuted onto Titan and sent data for about 72 minutes from the surface, where it still lies. Cassini kept studying Saturn, its rings and moons for 13 years, revealing geysers on Enceladus and methane lakes on Titan. On 15 September 2017 it was steered into Saturn's atmosphere to protect moons that might host life.",
+    "images": [
+      {
+        "src": "assets/images/pia07232.jpg",
+        "alt": "First color view of Titan's surface from the Huygens probe",
+        "credit": "NASA / JPL / ESA / University of Arizona"
+      }
+    ],
+    "sources": [
+      "https://science.nasa.gov/photojournal/first-color-view-of-titans-surface/",
+      "https://www.jpl.nasa.gov/images/pia07232-first-color-view-of-titans-surface"
+    ]
+  },
+  {
+    "id": "lro",
+    "name": "Lunar Reconnaissance Orbiter",
+    "body": "Moon",
+    "launch_year": 2009,
+    "end_year": null,
+    "status": "Active",
+    "location_description": "In orbit around the Moon",
+    "summary": "Still mapping the Moon from orbit, it photographs the hardware left behind by the Apollo missions.",
+    "technologies": [
+      "LROC cameras for detailed surface images",
+      "LOLA laser altimeter for 3D topography",
+      "Diviner radiometer for surface temperatures",
+      "LEND neutron detector and LAMP ultraviolet mapper"
+    ],
+    "key_discoveries": [
+      "Detailed 3D maps of the lunar surface",
+      "Images of Apollo landing sites showing the hardware and astronaut tracks still in place",
+      "Mapped extremely cold, permanently shadowed polar craters where water ice could be stable",
+      "Data used to choose safe landing sites for future missions"
+    ],
+    "left_behind": [
+      "No hardware on the surface: the orbiter and its instruments stay in lunar orbit"
+    ],
+    "why_it_matters": "LRO's images show that Apollo hardware is still on the Moon, and its maps help plan safe landings for future missions, including the Artemis programme.",
+    "story": "Launched on 18 June 2009 to prepare the way for future astronauts, LRO circles the Moon and maps it in unprecedented detail. Its cameras can see Apollo landing sites from orbit: descent stages, science stations, even the dark trails left by astronauts and rovers. Its instruments measure temperatures, radiation and hydrogen in the soil, and show which polar craters never see sunlight. Engineers use these maps to pick safe places for the next landings. LRO is the witness that shows the abandoned hardware is still there.",
+    "images": [],
+    "sources": [
+      "https://science.nasa.gov/mission/lro/",
+      "https://moon.nasa.gov/system/downloadable_items/357_LRO-litho6-viewing-traces.pdf"
     ]
   }
 ]

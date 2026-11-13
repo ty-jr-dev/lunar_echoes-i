@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <img
           src="${img.src}"
           alt="${img.alt}"
-          class="w-full max-h-[32rem] object-cover object-top rounded-xl"
+          class="mx-auto w-auto max-w-full max-h-[32rem] object-contain rounded-xl"
           loading="lazy"
         />
         <figcaption class="mt-2 text-sm text-slate-400">Credit: ${img.credit}</figcaption>
@@ -72,7 +72,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function listHtml(items) {
     if (!items || items.length === 0) return '<p class="text-slate-400">—</p>';
-    return `<ul class="list-disc list-inside space-y-1 text-slate-300">${items.map(i => `<li>${i}</li>`).join('')}</ul>`;
+    return '<ul class="list-disc list-inside space-y-1 text-slate-300">' +
+      items.map(function(i) { return '<li>' + i + '</li>'; }).join('') +
+      '</ul>';
   }
 
   // Sources – show only the domain as link text

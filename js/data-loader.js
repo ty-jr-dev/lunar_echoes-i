@@ -7,7 +7,7 @@ async function loadMissions() {
   const response = await fetch('data/missions_data.json');
 
   if (!response.ok) {
-    throw new Error(`HTTP error ${response.status}`);
+    throw new Error('HTTP error ' + response.status);
   }
 
   const data = await response.json();
