@@ -105,6 +105,18 @@ function setupFilters() {
   const buttons = document.querySelectorAll('.filter-btn');
   if (!buttons.length) return;
 
+  // Add mission counts to filter buttons
+  buttons.forEach(btn => {
+    const filter = btn.dataset.filter;
+
+    const count = filter === 'all'
+      ? allMissions.length
+      : allMissions.filter(m => m.body === filter).length;
+
+    const label = btn.textContent.trim();
+    btn.innerHTML = `${label} <span class="ml-1 text-slate-500">(${count})</span>`;
+  });
+
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
       // Remove active state from all

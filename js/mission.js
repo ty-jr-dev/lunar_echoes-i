@@ -97,10 +97,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     `;
   }
 
+    const sections = [
+    { id: 'story', label: 'Story' },
+    { id: 'technologies', label: 'Technologies' },
+    { id: 'discoveries', label: 'Key Discoveries' },
+    { id: 'left-behind', label: 'Left Behind' },
+    { id: 'sources', label: 'Sources' }
+  ];
+
+  const sectionNavHtml = `
+    <nav class="mission-nav" aria-label="Mission sections">
+      ${sections.map(section => `
+        <a href="#${section.id}" class="mission-nav-link">
+          ${section.label}
+        </a>
+      `).join('')}
+    </nav>
+  `;
   container.innerHTML = `
     <a href="index.html#missions" class="inline-flex items-center gap-2 text-sky-400 hover:underline mb-10">
       ← Back to missions
     </a>
+    ${sectionNavHtml}
 
     <p class="text-sky-400 text-sm font-medium tracking-wide uppercase mb-2">
       ${mission.body} · ${yearRange}
@@ -112,7 +130,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
       <div class="lg:col-span-2 space-y-10">
-        <section>
+        <section id="story">
           <h2 class="text-xl font-semibold mb-3">Story</h2>
           <p class="text-slate-300 leading-relaxed">${mission.story}</p>
         </section>
@@ -129,22 +147,22 @@ document.addEventListener('DOMContentLoaded', async () => {
           <p class="text-slate-300">${mission.location_description}</p>
         </section>
 
-        <section>
+        <section id="technologies">
           <h2 class="text-lg font-semibold mb-3">Technologies</h2>
           ${listHtml(mission.technologies)}
         </section>
 
-        <section>
+        <section id="discoveries">
           <h2 class="text-lg font-semibold mb-3">Key discoveries</h2>
           ${listHtml(mission.key_discoveries)}
         </section>
 
-        <section>
+        <section id="left-behind">
           <h2 class="text-lg font-semibold mb-3">Left behind</h2>
           ${listHtml(mission.left_behind)}
         </section>
 
-        <section>
+        <section id="sources">
           <h2 class="text-lg font-semibold mb-3">Sources</h2>
           ${sourcesHtml}
         </section>
@@ -153,4 +171,29 @@ document.addEventListener('DOMContentLoaded', async () => {
   `;
 
   document.title = `${mission.name} — Lunar Echoes`;
+    const navLinks = document.querySelectorAll('.mission-nav-link');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          const isActive = link.getAttribute('href') === `#${entry.target.id}`;
+
+          link.classList.toggle('active', isActive);
+
+          if (isActive) {
+            link.setAttribute('aria-current', 'location');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -65% 0px'
+  });
+
+  sections.forEach(section => {
+    observer.observe(document.getElementById(section.id));
+  });
 });
