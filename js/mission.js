@@ -54,20 +54,54 @@ document.addEventListener('DOMContentLoaded', async () => {
     yearRange = `${mission.launch_year} – ${mission.end_year}`;
   }
 
-  // Images – only credit in caption; alt stays on the img
+  // Mission image gallery
   let imagesHtml = '';
+
   if (mission.images && mission.images.length > 0) {
-    imagesHtml = mission.images.map(img => `
-      <figure class="mb-8">
-        <img
-          src="${img.src}"
-          alt="${img.alt}"
-          class="mx-auto w-auto max-w-full max-h-[32rem] object-contain rounded-xl"
-          loading="lazy"
-        />
-        <figcaption class="mt-2 text-sm text-slate-400">Credit: ${img.credit}</figcaption>
+    const featuredImage =
+      mission.images.find(img => img.featured) || mission.images[0];
+
+    const supportingImages = mission.images.filter(
+      img => img !== featuredImage
+    );
+
+    const renderImage = (img, className) => `
+      <figure class="mission-gallery-item ${className}">
+        <div class="mission-gallery-image">
+          <img
+            src="${img.src}"
+            alt="${img.alt}"
+            loading="lazy"
+          />
+        </div>
+        <figcaption>
+          <span>${img.alt}</span>
+          <span class="mission-image-credit">${img.credit}</span>
+        </figcaption>
       </figure>
-    `).join('');
+    `;
+
+    imagesHtml = `
+      <section class="mission-gallery mb-12" aria-label="Mission images">
+        <div class="mission-gallery-layout ${
+          supportingImages.length > 0 ? 'has-supporting' : 'single-image'
+        }">
+          ${renderImage(featuredImage, 'featured-image')}
+
+          ${
+            supportingImages.length > 0
+              ? `
+                <div class="mission-gallery-supporting">
+                  ${supportingImages
+                    .map(img => renderImage(img, 'supporting-image'))
+                    .join('')}
+                </div>
+              `
+              : ''
+          }
+        </div>
+      </section>
+    `;
   }
 
   function listHtml(items) {

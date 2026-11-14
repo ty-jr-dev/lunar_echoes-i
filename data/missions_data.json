@@ -30,7 +30,8 @@
       {
         "src": "assets/images/as11-40-5903.jpg",
         "alt": "Astronaut Buzz Aldrin on the lunar surface with Neil Armstrong reflected in his visor",
-        "credit": "NASA"
+        "credit": "NASA",
+        "featured": true
       }
     ],
     "sources": [
@@ -70,7 +71,8 @@
       {
         "src": "assets/images/as12-48-7133.jpg",
         "alt": "Astronaut Charles Conrad examines the Surveyor 3 spacecraft, with the Lunar Module in the background",
-        "credit": "NASA"
+        "credit": "NASA",
+        "featured": true
       }
     ],
     "sources": [
@@ -109,7 +111,8 @@
       {
         "src": "assets/images/as17-147-22527.jpg",
         "alt": "Apollo 17 lunar rover on the surface of the Moon",
-        "credit": "NASA"
+        "credit": "NASA",
+        "featured": true
       }
     ],
     "sources": [
@@ -148,7 +151,14 @@
       {
         "src": "assets/images/viking1-pia00563.jpg",
         "alt": "First color image taken by the Viking 1 lander, the day after landing",
-        "credit": "NASA / JPL"
+        "credit": "NASA / JPL",
+        "featured": true
+      },
+      {
+        "src": "https://www.nasa.gov/wp-content/uploads/2023/03/261003main_02_Viking1_full.jpg",
+        "alt": "Viking 1 spacecraft",
+        "credit": "NASA",
+        "featured": false
       }
     ],
     "sources": [
@@ -187,7 +197,14 @@
       {
         "src": "assets/images/pia00600.jpg",
         "alt": "Family portrait of Jupiter and the Galilean satellites",
-        "credit": "NASA / JPL"
+        "credit": "NASA / JPL",
+        "featured": false
+      },
+      {
+        "src": "https://www.nasa.gov/wp-content/uploads/2023/03/s34-71-00r.jpg",
+        "alt": "Galileo spacecraft being deployed from the Space Shuttle Atlantis",
+        "credit": "NASA",
+        "featured": true
       }
     ],
     "sources": [
@@ -226,7 +243,8 @@
       {
         "src": "assets/images/pia01003.jpg",
         "alt": "Sojourner rover near the rock Yogi, with a Pathfinder lander petal in view",
-        "credit": "NASA / JPL"
+        "credit": "NASA / JPL",
+        "featured": true
       }
     ],
     "sources": [
@@ -264,12 +282,14 @@
       {
         "src": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/69_IMG001942_768.jpg",
         "alt": "Cassini spacecraft",
-        "credit": "NASA"
+        "credit": "NASA",
+        "featured": true
       },
       {
         "src": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2004/06/huygens_probe_integrated_with_cassini_orbiter/9906745-2-eng-GB/85574/image-thumb__85574__fit_large/Huygens_Probe_integrated_with_Cassini_orbiter~-~media--9a2dd926--query.c21cc175.webp",
         "alt": "Huygens probe integrated with the Cassini orbiter",
-        "credit": "ESA"
+        "credit": "ESA",
+        "featured": false
       }
     ],
     "sources": [
@@ -277,42 +297,48 @@
       "https://www.jpl.nasa.gov/images/pia07232-first-color-view-of-titans-surface"
     ]
   },
-
   {
-  "id": "chandrayaan-1",
-  "name": "Chandrayaan-1",
-  "body": "Moon",
-  "launch_year": 2008,
-  "end_year": 2009,
-  "status": "Abandoned",
-  "location_description": "Lunar orbit and the Moon Impact Probe impact site near the lunar south pole",
-  "summary": "India's first lunar mission, Chandrayaan-1 carried 11 scientific instruments to map the Moon and investigate its chemical and mineral composition. It also deployed an impact probe onto the lunar surface.",
-  "technologies": [
-    "Moon Mineralogy Mapper (M3)",
-    "Miniature Synthetic Aperture Radar (Mini-SAR)",
-    "Terrain Mapping Camera (TMC)",
-    "Moon Impact Probe (MIP)",
-    "Chandra's Altitudinal Composition Explorer (CHACE)"
-  ],
-  "key_discoveries": [
-    "Provided important evidence of water and hydroxyl molecules on the lunar surface.",
-    "M3 produced mineralogical data that helped scientists identify water-bearing materials.",
-    "Mini-SAR data revealed evidence of water ice in permanently shadowed lunar craters."
-  ],
-  "left_behind": [
-    "Moon Impact Probe (MIP): deliberately impacted the lunar surface near the south pole in November 2008.",
-    "Chandrayaan-1 orbiter: lost communication in August 2009 and was later located by NASA radar still orbiting the Moon in 2016."
-  ],
-  "why_it_matters": "Chandrayaan-1 established India's presence in lunar exploration and contributed important scientific evidence about water on the Moon, helping shape future lunar exploration.",
-  "story": "Launched on October 22, 2008, Chandrayaan-1 was India's first mission to the Moon. The spacecraft carried 11 scientific instruments contributed by India and international partners. On November 14, 2008, it released the Moon Impact Probe, which deliberately struck the lunar surface near the south pole. The mission's instruments produced valuable observations, including evidence of water-bearing materials on the Moon. After completing more than 3,400 lunar orbits, communication with the spacecraft was lost in August 2009, bringing the mission to an end. Although contact was lost, NASA later detected the orbiter still circling the Moon in 2016.",
-  "images": [],
-  "sources": [
-    "https://www.isro.gov.in/Chandrayaan_1.html",
-    "https://www.isro.gov.in/FAQ_chandrayan2.html",
-    "https://science.nasa.gov/mission/chandrayaan-1/",
-    "https://www.jpl.nasa.gov/news/new-nasa-radar-technique-finds-lost-lunar-spacecraft/",
-    "https://www.jpl.nasa.gov/missions/moon-mineralogy-mapper-m3/"
-  ]
+    "id": "chandrayaan-1",
+    "name": "Chandrayaan-1",
+    "body": "Moon",
+    "launch_year": 2008,
+    "end_year": 2009,
+    "status": "Abandoned",
+    "location_description": "Lunar orbit and the Moon Impact Probe impact site near the lunar south pole",
+    "summary": "India's first lunar mission, Chandrayaan-1 carried 11 scientific instruments to map the Moon and investigate its chemical and mineral composition. It also deployed an impact probe onto the lunar surface.",
+    "technologies": [
+      "Moon Mineralogy Mapper (M3)",
+      "Miniature Synthetic Aperture Radar (Mini-SAR)",
+      "Terrain Mapping Camera (TMC)",
+      "Moon Impact Probe (MIP)",
+      "Chandra's Altitudinal Composition Explorer (CHACE)"
+    ],
+    "key_discoveries": [
+      "Provided important evidence of water and hydroxyl molecules on the lunar surface.",
+      "M3 produced mineralogical data that helped scientists identify water-bearing materials.",
+      "Mini-SAR data revealed evidence of water ice in permanently shadowed lunar craters."
+    ],
+    "left_behind": [
+      "Moon Impact Probe (MIP): deliberately impacted the lunar surface near the south pole in November 2008.",
+      "Chandrayaan-1 orbiter: lost communication in August 2009 and was later located by NASA radar still orbiting the Moon in 2016."
+    ],
+    "why_it_matters": "Chandrayaan-1 established India's presence in lunar exploration and contributed important scientific evidence about water on the Moon, helping shape future lunar exploration.",
+    "story": "Launched on October 22, 2008, Chandrayaan-1 was India's first mission to the Moon. The spacecraft carried 11 scientific instruments contributed by India and international partners. On November 14, 2008, it released the Moon Impact Probe, which deliberately struck the lunar surface near the south pole. The mission's instruments produced valuable observations, including evidence of water-bearing materials on the Moon. After completing more than 3,400 lunar orbits, communication with the spacecraft was lost in August 2009, bringing the mission to an end. Although contact was lost, NASA later detected the orbiter still circling the Moon in 2016.",
+    "images": [
+      {
+        "src": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2008/09/the_chandrayaan-1_spacecraft/9913786-2-eng-GB/86333/image-thumb__86333__fit_large/The_Chandrayaan-1_spacecraft~-~media--9a2dd926--query.4a8fd385.webp",
+        "alt": "Chandrayaan-1 spacecraft during preparation before launch",
+        "credit": "ESA / ISRO",
+        "featured": true
+      }
+    ],
+    "sources": [
+      "https://www.isro.gov.in/Chandrayaan_1.html",
+      "https://www.isro.gov.in/FAQ_chandrayan2.html",
+      "https://science.nasa.gov/mission/chandrayaan-1/",
+      "https://www.jpl.nasa.gov/news/new-nasa-radar-technique-finds-lost-lunar-spacecraft/",
+      "https://www.jpl.nasa.gov/missions/moon-mineralogy-mapper-m3/"
+    ]
   },
   {
     "id": "lro",
@@ -344,7 +370,8 @@
       {
         "src": "https://svs.gsfc.nasa.gov/vis/a010000/a010400/a010408/LROspacecraft_baggedsideways_MD_label.jpg",
         "alt": "Lunar Reconnaissance Orbiter spacecraft during preparation",
-        "credit": "NASA / Goddard Space Flight Center"
+        "credit": "NASA / Goddard Space Flight Center",
+        "featured": true
       }
     ],
     "sources": [
