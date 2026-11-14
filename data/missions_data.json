@@ -262,9 +262,14 @@
     "story": "Cassini-Huygens, a joint mission of NASA, ESA and the Italian space agency, reached Saturn on 1 July 2004. On 14 January 2005, the European Huygens probe parachuted onto Titan and sent data for about 72 minutes from the surface, where it still lies. Cassini kept studying Saturn, its rings and moons for 13 years, revealing geysers on Enceladus and methane lakes on Titan. On 15 September 2017 it was steered into Saturn's atmosphere to protect moons that might host life.",
     "images": [
       {
-        "src": "assets/images/pia07232.jpg",
-        "alt": "First color view of Titan's surface from the Huygens probe",
-        "credit": "NASA / JPL / ESA / University of Arizona"
+        "src": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/69_IMG001942_768.jpg",
+        "alt": "Cassini spacecraft",
+        "credit": "NASA"
+      },
+      {
+        "src": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2004/06/huygens_probe_integrated_with_cassini_orbiter/9906745-2-eng-GB/85574/image-thumb__85574__fit_large/Huygens_Probe_integrated_with_Cassini_orbiter~-~media--9a2dd926--query.c21cc175.webp",
+        "alt": "Huygens probe integrated with the Cassini orbiter",
+        "credit": "ESA"
       }
     ],
     "sources": [
@@ -335,7 +340,13 @@
     ],
     "why_it_matters": "LRO's images show that Apollo hardware is still on the Moon, and its maps help plan safe landings for future missions, including the Artemis programme.",
     "story": "Launched on 18 June 2009 to prepare the way for future astronauts, LRO circles the Moon and maps it in unprecedented detail. Its cameras can see Apollo landing sites from orbit: descent stages, science stations, even the dark trails left by astronauts and rovers. Its instruments measure temperatures, radiation and hydrogen in the soil, and show which polar craters never see sunlight. Engineers use these maps to pick safe places for the next landings. LRO is the witness that shows the abandoned hardware is still there.",
-    "images": [],
+    "images": [
+      {
+        "src": "https://svs.gsfc.nasa.gov/vis/a010000/a010400/a010408/LROspacecraft_baggedsideways_MD_label.jpg",
+        "alt": "Lunar Reconnaissance Orbiter spacecraft during preparation",
+        "credit": "NASA / Goddard Space Flight Center"
+      }
+    ],
     "sources": [
       "https://science.nasa.gov/mission/lro/",
       "https://moon.nasa.gov/system/downloadable_items/357_LRO-litho6-viewing-traces.pdf"
