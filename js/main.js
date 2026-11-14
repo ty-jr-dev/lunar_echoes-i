@@ -63,19 +63,37 @@ function createMissionCard(mission) {
   article.className = 'mission-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-sky-400';
 
   const imageHtml = mission.images && mission.images[0]
-    ? `<img src="${mission.images[0].src}" alt="${mission.images[0].alt}" loading="lazy" class="w-full h-40 object-cover">`
-    : '';
+    ? `<img src="${mission.images[0].src}" alt="${mission.images[0].alt}" loading="lazy" class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105">`
+    : `<div class="w-full h-52 bg-slate-800 flex items-center justify-center text-slate-500 text-sm">Image unavailable</div>`;
 
   article.innerHTML = `
-    <a href="mission.html?id=${mission.id}" class="block">
-      ${imageHtml}
+    <a href="mission.html?id=${mission.id}" class="group block h-full">
+      <div class="relative overflow-hidden">
+        ${imageHtml}
+        <span class="absolute top-3 left-3 bg-slate-950/80 text-sky-400 text-xs font-medium px-3 py-1 rounded-full">
+          ${mission.body}
+        </span>
+      </div>
+
       <div class="p-5">
-        <p class="text-sky-400 text-xs font-medium tracking-wide uppercase mb-2">
-          ${mission.body} · ${mission.launch_year}
+        <p class="text-slate-500 text-xs font-medium tracking-wide mb-2">
+          ${mission.launch_year}
         </p>
-        <h3 class="text-lg font-semibold mb-2 leading-snug">${mission.name}</h3>
-        <p class="text-slate-400 text-sm">${mission.summary}</p>
-        <p class="mt-4 text-xs text-slate-400">Status: ${mission.status}</p>
+
+        <h3 class="text-xl font-semibold mb-3 leading-snug group-hover:text-sky-400 transition-colors">
+          ${mission.name}
+        </h3>
+
+        <p class="text-slate-400 text-sm leading-relaxed">
+          ${mission.summary}
+        </p>
+
+        <div class="flex items-center justify-between mt-5 pt-4 border-t border-slate-800">
+          <span class="text-xs text-slate-500">${mission.status}</span>
+          <span class="text-sky-400 text-sm font-medium group-hover:translate-x-1 transition-transform">
+            Explore mission →
+          </span>
+        </div>
       </div>
     </a>
   `;
