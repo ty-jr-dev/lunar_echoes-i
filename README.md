@@ -24,13 +24,16 @@ Open http://localhost:8080 in your browser.
 lunar-echoes/
 ├── index.html              (Home, mission list and timeline)
 ├── mission.html            (Mission detail page)
+├── quiz.html               (Interactive quiz)
 ├── css/style.css           (Custom styles)
 ├── js/
 │   ├── data-loader.js      (Loads and validates the JSON)
 │   ├── main.js             (Home page logic)
-│   └── mission.js          (Mission detail page logic)
+│   ├── mission.js          (Mission detail page logic)
+│   └── quiz.js             (Quiz page logic)
 ├── data/
-│   └── missions_data.json
+│   ├── missions_data.json
+│   └── quiz_data.json
 └── assets/images/          (Hero, logos and mission photos)
 
 ## Data format

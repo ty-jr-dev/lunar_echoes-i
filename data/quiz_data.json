@@ -1,0 +1,119 @@
+[
+  {
+    "id": "q-apollo-11",
+    "mission_id": "apollo-11",
+    "question": "Apollo 11 left an instrument on the Moon that scientists still use today to measure the distance between Earth and the Moon. What is it?",
+    "options": [
+      "A laser retroreflector",
+      "A lunar rover",
+      "A TV camera",
+      "A rocket stage from the Saturn V"
+    ],
+    "answer": 0,
+    "explanation": "The laser retroreflector bounces laser beams back to Earth, which makes very precise distance measurements possible even today."
+  },
+  {
+    "id": "q-apollo-12",
+    "mission_id": "apollo-12",
+    "question": "Apollo 12 landed right next to a robot probe that had already been on the Moon for more than two years. Which one?",
+    "options": [
+      "Surveyor 3",
+      "Viking 1",
+      "Galileo",
+      "Sojourner"
+    ],
+    "answer": 0,
+    "explanation": "The astronauts walked to Surveyor 3 and brought pieces of it home, so engineers could study how materials age on the Moon."
+  },
+  {
+    "id": "q-apollo-17",
+    "mission_id": "apollo-17",
+    "question": "The Apollo 17 astronauts explored far from their lander in a battery-powered vehicle that is still on the Moon. What is it called?",
+    "options": [
+      "Lunar Roving Vehicle",
+      "Sojourner",
+      "Huygens",
+      "Surveyor"
+    ],
+    "answer": 0,
+    "explanation": "The Lunar Roving Vehicle extended the astronauts' exploration range. It stayed where they left it in the Taurus-Littrow Valley."
+  },
+  {
+    "id": "q-viking-1",
+    "mission_id": "viking-1",
+    "question": "The Viking 1 lander was designed to work for about 90 days on Mars. How long did it really work?",
+    "options": [
+      "About three weeks",
+      "Exactly 90 days",
+      "About six months",
+      "More than six years"
+    ],
+    "answer": 3,
+    "explanation": "Viking 1 landed in 1976 and kept sending data until 1982, far longer than planned."
+  },
+  {
+    "id": "q-galileo",
+    "mission_id": "galileo",
+    "question": "How did the Galileo mission end in 2003?",
+    "options": [
+      "It landed on Europa",
+      "It was sent into Jupiter on purpose",
+      "It flew back to Earth",
+      "It was lost with no explanation"
+    ],
+    "answer": 1,
+    "explanation": "Engineers steered Galileo into Jupiter's atmosphere to protect its moons, where life might exist, from contamination."
+  },
+  {
+    "id": "q-mars-pathfinder",
+    "mission_id": "mars-pathfinder",
+    "question": "How did Mars Pathfinder cushion its landing on Mars?",
+    "options": [
+      "A giant balloon",
+      "Inflatable airbags",
+      "A runway",
+      "A net"
+    ],
+    "answer": 1,
+    "explanation": "Pathfinder bounced to a stop inside airbags, then its petals opened and the Sojourner rover rolled out."
+  },
+  {
+    "id": "q-cassini-huygens",
+    "mission_id": "cassini-huygens",
+    "question": "The Huygens probe is still where it landed in 2005. Where is it?",
+    "options": [
+      "On Enceladus",
+      "On Mars",
+      "On Titan",
+      "Inside Saturn's rings"
+    ],
+    "answer": 2,
+    "explanation": "Huygens rests on the surface of Titan, Saturn's largest moon. It was the first human-made object to land on a moon of the outer Solar System."
+  },
+  {
+    "id": "q-chandrayaan-1",
+    "mission_id": "chandrayaan-1",
+    "question": "Which country launched Chandrayaan-1, whose lost orbiter was later found again by NASA radar?",
+    "options": [
+      "United States",
+      "Japan",
+      "India",
+      "China"
+    ],
+    "answer": 2,
+    "explanation": "Chandrayaan-1 was India's first mission to the Moon. It carried instruments from several countries, including NASA."
+  },
+  {
+    "id": "q-lro",
+    "mission_id": "lro",
+    "question": "What can the cameras of the Lunar Reconnaissance Orbiter see from orbit?",
+    "options": [
+      "The Viking 1 lander on Mars",
+      "Galileo's remains in Jupiter",
+      "Apollo hardware and astronaut tracks on the Moon",
+      "Cassini's orbit around Saturn"
+    ],
+    "answer": 2,
+    "explanation": "LRO photographs the Apollo landing sites, where descent stages, instruments and astronaut tracks are still in place."
+  }
+]

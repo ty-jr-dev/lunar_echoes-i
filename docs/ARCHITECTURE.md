@@ -9,11 +9,13 @@ Lunar Echoes is a fully static website. There is no server-side code, no databas
 1. `data/missions_data.json` is the single source of truth (array of mission objects).
 2. `js/data-loader.js` fetches the JSON, validates that the root is an array, and returns it (or throws).
 3. `js/main.js` (home page) and `js/mission.js` (detail page) consume the data and render the UI.
+4. `js/quiz.js` loads `data/quiz_data.json` via `loadQuiz()` and renders the quiz UI.
 
 ## Pages
 
 - `index.html` — hero, filterable mission cards, chronological timeline, about section.
 - `mission.html` — single mission detail. Reads the `id` query parameter.
+- `quiz.html` — interactive quiz (one question at a time, score at the end).
 
 ## Styling
 
