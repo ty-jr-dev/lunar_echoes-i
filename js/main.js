@@ -64,7 +64,7 @@ function createMissionCard(mission) {
 
   const imageHtml = mission.images && mission.images[0]
     ? `<img src="${mission.images[0].src}" alt="${mission.images[0].alt}" loading="lazy" class="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105">`
-    : `<div class="w-full h-52 bg-slate-800 flex items-center justify-center text-slate-500 text-sm">Image unavailable</div>`;
+    : `<div class="w-full h-52 bg-slate-800 flex items-center justify-center text-slate-400 text-sm">Image unavailable</div>`;
 
   article.innerHTML = `
     <a href="mission.html?id=${mission.id}" class="group block h-full">
