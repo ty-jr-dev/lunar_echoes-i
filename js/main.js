@@ -114,7 +114,7 @@ function setupFilters() {
       : allMissions.filter(m => m.body === filter).length;
 
     const label = btn.textContent.trim();
-    btn.innerHTML = `${label} <span class="ml-1 text-slate-500">(${count})</span>`;
+    btn.innerHTML = `${label} <span class="ml-1 text-slate-400">(${count})</span>`;
   });
 
   buttons.forEach(btn => {
