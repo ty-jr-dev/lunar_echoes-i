@@ -39,7 +39,7 @@ Root is a JSON array of mission objects. Required fields: id, name, body, launch
 
 ## Credits
 
-- Mission images: NASA / JPL
+- Mission images: NASA / JPL / ESA / ISRO (credits shown on each image)
 - Hero image: AI-generated illustration
 - Logo and mark: project assets
 

@@ -76,7 +76,7 @@ function createMissionCard(mission) {
       </div>
 
       <div class="p-5">
-        <p class="text-slate-500 text-xs font-medium tracking-wide mb-2">
+        <p class="text-slate-400 text-xs font-medium tracking-wide mb-2">
           ${mission.launch_year}
         </p>
 
@@ -89,7 +89,7 @@ function createMissionCard(mission) {
         </p>
 
         <div class="flex items-center justify-between mt-5 pt-4 border-t border-slate-800">
-          <span class="text-xs text-slate-500">${mission.status}</span>
+          <span class="text-xs text-slate-400">${mission.status}</span>
           <span class="text-sky-400 text-sm font-medium group-hover:translate-x-1 transition-transform">
             Explore mission →
           </span>
