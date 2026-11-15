@@ -155,7 +155,7 @@
         "featured": true
       },
       {
-        "src": "https://www.nasa.gov/wp-content/uploads/2023/03/261003main_02_Viking1_full.jpg",
+        "src": "assets/images/viking-1-2.jpg",
         "alt": "Viking 1 spacecraft",
         "credit": "NASA",
         "featured": false
@@ -201,7 +201,7 @@
         "featured": false
       },
       {
-        "src": "https://www.nasa.gov/wp-content/uploads/2023/03/s34-71-00r.jpg",
+        "src": "assets/images/galileo-2.jpg",
         "alt": "Galileo spacecraft being deployed from the Space Shuttle Atlantis",
         "credit": "NASA",
         "featured": true
@@ -280,13 +280,13 @@
     "story": "Cassini-Huygens, a joint mission of NASA, ESA and the Italian space agency, reached Saturn on 1 July 2004. On 14 January 2005, the European Huygens probe parachuted onto Titan and sent data for about 72 minutes from the surface, where it still lies. Cassini kept studying Saturn, its rings and moons for 13 years, revealing geysers on Enceladus and methane lakes on Titan. On 15 September 2017 it was steered into Saturn's atmosphere to protect moons that might host life.",
     "images": [
       {
-        "src": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/07/69_IMG001942_768.jpg",
+        "src": "assets/images/cassini-huygens-1.jpg",
         "alt": "Cassini spacecraft",
         "credit": "NASA",
         "featured": true
       },
       {
-        "src": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2004/06/huygens_probe_integrated_with_cassini_orbiter/9906745-2-eng-GB/85574/image-thumb__85574__fit_large/Huygens_Probe_integrated_with_Cassini_orbiter~-~media--9a2dd926--query.c21cc175.webp",
+        "src": "assets/images/cassini-huygens-2.jpg",
         "alt": "Huygens probe integrated with the Cassini orbiter",
         "credit": "ESA",
         "featured": false
@@ -326,7 +326,7 @@
     "story": "Launched on October 22, 2008, Chandrayaan-1 was India's first mission to the Moon. The spacecraft carried 11 scientific instruments contributed by India and international partners. On November 14, 2008, it released the Moon Impact Probe, which deliberately struck the lunar surface near the south pole. The mission's instruments produced valuable observations, including evidence of water-bearing materials on the Moon. After completing more than 3,400 lunar orbits, communication with the spacecraft was lost in August 2009, bringing the mission to an end. Although contact was lost, NASA later detected the orbiter still circling the Moon in 2016.",
     "images": [
       {
-        "src": "https://media.esa.int/legacy/web/images/esa_multimedia/images/2008/09/the_chandrayaan-1_spacecraft/9913786-2-eng-GB/86333/image-thumb__86333__fit_large/The_Chandrayaan-1_spacecraft~-~media--9a2dd926--query.4a8fd385.webp",
+        "src": "assets/images/chandrayaan-1-1.jpg",
         "alt": "Chandrayaan-1 spacecraft during preparation before launch",
         "credit": "ESA / ISRO",
         "featured": true
@@ -368,7 +368,7 @@
     "story": "Launched on 18 June 2009 to prepare the way for future astronauts, LRO circles the Moon and maps it in unprecedented detail. Its cameras can see Apollo landing sites from orbit: descent stages, science stations, even the dark trails left by astronauts and rovers. Its instruments measure temperatures, radiation and hydrogen in the soil, and show which polar craters never see sunlight. Engineers use these maps to pick safe places for the next landings. LRO is the witness that shows the abandoned hardware is still there.",
     "images": [
       {
-        "src": "https://svs.gsfc.nasa.gov/vis/a010000/a010400/a010408/LROspacecraft_baggedsideways_MD_label.jpg",
+        "src": "assets/images/lro-1.jpg",
         "alt": "Lunar Reconnaissance Orbiter spacecraft during preparation",
         "credit": "NASA / Goddard Space Flight Center",
         "featured": true
